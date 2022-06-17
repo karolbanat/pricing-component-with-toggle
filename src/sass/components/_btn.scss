@@ -1,0 +1,83 @@
+.btn {
+	padding: 1em;
+	width: 100%;
+
+	font-size: var(--fz-small);
+	text-transform: uppercase;
+	line-height: 1.2;
+
+	background-image: var(--bg-image, none);
+	background-color: var(--bg-button, transparent);
+	color: var(--clr-button, var(--clr-primary-700));
+
+	border: 1px solid var(--border-button, var(--clr-white));
+	border-radius: var(--borr-sm);
+
+	cursor: pointer;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, opacity 0.35s ease-in-out,
+		border 0.35s ease-in-out;
+
+	&--primary {
+		--bg-image: var(--clr-primary-gradient);
+		--clr-button: var(--clr-white);
+
+		&:hover {
+			--bg-image: none;
+			--bg-button: var(--clr-white);
+			--clr-button: var(--clr-primary-700);
+			--border-button: var(--clr-primary-700);
+		}
+	}
+
+	&--accent {
+		--clr-button: var(--clr-primary-700);
+		--bg-button: var(--clr-white);
+
+		&:hover {
+			--bg-button: var(--clr-primary-700);
+			--clr-button: var(--clr-white);
+			--border-button: var(--clr-primary-700);
+		}
+	}
+
+	&--toggle {
+		--bg-image: var(--clr-primary-gradient);
+
+		position: relative;
+
+		width: 5.6rem;
+		height: 3.2rem;
+
+		border-radius: 100vmax;
+
+		&::before {
+			position: absolute;
+			transform: translateY(-50%);
+
+			height: 2.4rem;
+			aspect-ratio: 1;
+
+			background-color: var(--clr-white);
+
+			border-radius: 100vmax;
+			transition: left 0.35s ease-in-out, right 0.35s ease-in-out;
+			content: '';
+		}
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&.monthly {
+			&::before {
+				left: calc(100% - 2.8rem);
+			}
+		}
+
+		&.annual {
+			&::before {
+				left: 0.4rem;
+			}
+		}
+	}
+}

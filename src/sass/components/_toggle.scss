@@ -1,0 +1,16 @@
+.toggle {
+	display: flex;
+	align-items: center;
+	gap: 2.4rem;
+
+	margin-bottom: 8rem;
+
+	@media (min-width: 60em) {
+		margin-bottom: 6.4rem;
+	}
+
+	&__label {
+		font-size: var(--fz-regular);
+		opacity: 0.5;
+	}
+}
