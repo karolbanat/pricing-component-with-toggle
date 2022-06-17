@@ -34,9 +34,8 @@
 		--bg-button: var(--clr-white);
 
 		&:hover {
-			--bg-button: var(--clr-primary-700);
+			--bg-button: transparent;
 			--clr-button: var(--clr-white);
-			--border-button: var(--clr-primary-700);
 		}
 	}
 

@@ -1,14 +1,16 @@
 body {
 	font-family: var(--ff);
 	line-height: 1.25;
-	
 	color: var(--clr-body);
 }
 
 main {
-	display: grid;
-	place-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+	padding: 7.2rem 2.4rem;
 	min-height: 100vh;
+
 	background-color: var(--bg-body);
 }

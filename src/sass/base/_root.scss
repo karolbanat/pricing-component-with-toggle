@@ -1,7 +1,7 @@
 :root {
 	// colors
-	--clr-primary-700: hsl(237, 63%, 64%);
-	--clr-primary-700-light: hsl(236, 72%, 79%);
+	--clr-primary-700: hsl(237 63% 64%);
+	--clr-primary-700-light: hsl(236 72% 79%);
 
 	--clr-primary-gradient: linear-gradient(
 		to bottom right,
@@ -9,11 +9,11 @@
 		var(--clr-primary-700) 100%
 	);
 
-	--clr-neutral-300: hsl(240, 78%, 98%);
-	--clr-neutral-400: hsl(232, 13%, 33%);
-	--clr-neutral-700: hsl(233, 13%, 49%);
+	--clr-neutral-300: hsl(240 78% 98%);
+	--clr-neutral-400: hsl(232 13% 33%);
+	--clr-neutral-700: hsl(233 13% 49%);
 
-	--clr-white: hsl(0, 0%, 100%);
+	--clr-white: hsl(0 0% 100%);
 	--clr-shadow: hsl(244 61% 89% / 0.5);
 
 	// font families
@@ -27,7 +27,7 @@
 	--fz-regular: 1.5rem;
 	--fz-medium: 1.8rem;
 	--fz-large: 3.2rem;
-	--fz-large-xl: 7.2rem;
+	--fz-large-xl: 4rem;
 
 	// border radius
 	--borr-sm: 0.6rem;
@@ -38,9 +38,7 @@
 	--bg-body: var(--clr-neutral-300);
 
 	--clr-card: var(--clr-neutral-700);
-	--clr-card-heading: var(--clr-neutral-400);
+	--clr-card-price: var(--clr-neutral-400);
 	--bg-card: var(--clr-white);
-	--card-line: var(--clr-neutral-700);
 	--card-shadow: 0 2rem 4rem var(--clr-shadow);
-
 }

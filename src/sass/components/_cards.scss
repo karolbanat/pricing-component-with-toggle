@@ -1,10 +1,12 @@
-.pricing {
+.cards {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
 	width: 100%;
 
-	font-weight: var(--fw-700);
+	@media (max-width: 60em) {
+		flex-direction: column;
+		gap: 3.2rem;
+	}
 }
