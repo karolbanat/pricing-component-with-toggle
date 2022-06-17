@@ -1,0 +1,10 @@
+.background {
+	background-image: url('../images/bg-top.svg'), url('../images/bg-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top right -50vw, bottom left -50vw;
+	background-color: var(--bg-body);
+
+	@media (min-width: 25em) {
+		background-position: top right, bottom left;
+	}
+}
