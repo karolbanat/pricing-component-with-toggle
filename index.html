@@ -2,49 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/css/main.min.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./dist/css/main.min.css">
 
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+	<title>Frontend Mentor | Pricing component with toggle</title>
 </head>
 
 <body>
-
-  <!-- Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More -->
-
+	<main>
+		<section class="pricing" aria-labelledby="pricing-heading">
+			<h1 id="pricing-heading" class="section-heading">Our Pricing</h1>
+			<div class="toggle">
+				<p class="toggle__label">Annually</p>
+				<button class="btn btn--primary btn--toggle monthly" aria-label="Change to annual pricing"></button>
+				<p class="toggle__label">Monthly</p>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<h2 class="card__heading">Basic</h2>
+					<p class="card__price">&dollar;<span id="basic-price">19.99</span></p>
+					<ul class="card__benefits">
+						<li class="card__benefit">500 GB Storage</li>
+						<li class="card__benefit">2 Users Allowed</li>
+						<li class="card__benefit">Send up to 3 GB</li>
+					</ul>
+					<button class="btn btn--primary">Learn More</button>
+				</div>
+				<div class="card card--highlighted">
+					<h2 class="card__heading">Professional</h2>
+					<p class="card__price">&dollar;<span id="professional-price">24.99</span></p>
+					<ul class="card__benefits">
+						<li class="card__benefit">1 TB Storagee</li>
+						<li class="card__benefit">5 Users Allowed</li>
+						<li class="card__benefit">Send up to 10 GB</li>
+					</ul>
+					<button class="btn btn--accent">Learn More</button>
+				</div>
+				<div class="card">
+					<h2 class="card__heading">Master</h2>
+					<p class="card__price">&dollar;<span id="master-price">39.99</span></p>
+					<ul class="card__benefits">
+						<li class="card__benefit">2 TB Storage</li>
+						<li class="card__benefit">10 Users Allowed</li>
+						<li class="card__benefit">Send up to 20 GB</li>
+					</ul>
+					<button class="btn btn--primary">Learn More</button>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 
 </html>
